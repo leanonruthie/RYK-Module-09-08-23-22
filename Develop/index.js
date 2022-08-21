@@ -35,7 +35,7 @@ const questions = [{
     message: 'Which npm package did you install?',
 },
 {
-    type: 'input',
+    type: 'list',
     name: 'license',
     message: 'What kind of license should your project have?',
     choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
