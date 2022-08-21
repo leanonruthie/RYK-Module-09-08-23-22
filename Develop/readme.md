@@ -1,6 +1,6 @@
 
-  # Creating README.md with Node.JS
-  As mentioned in the heading above, we are using Node.JS to create a readme file
+  # zzzz
+  zzzz
 
   # Table of Contents 
   * [Repository][#repository]
@@ -10,16 +10,16 @@
   * [URL][#url]
   
   # Repository
- https://github.com/leanonruthie/RYK-Module-09-08-23-22
+ https://github.com/zzzz/zzzz
   
   # Package 
-  inquirer
+  zzzzz
 
   # License
-  * MIT
+  * zzzzz
    
   # Command
-  "node index.js"
+  zzzzzzzz
 
   # URL 
-  https://leanonruthie.github.io/RYK-Module-09-08-23-22/
+  zzzzzzz

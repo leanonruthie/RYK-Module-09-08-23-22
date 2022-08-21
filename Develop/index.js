@@ -75,7 +75,7 @@ function writeToFile(fileName, data) {
 function init() {
     // call upon ththe above const questions array
     inquirer.prompt(questions)
-        .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
+        .then((data) => writeToFile('README.md', generateMarkdown(data)))
         .then(() => console.log('Successfully wrote to README.md'))
         .catch((err) => console.error(err));
 }
