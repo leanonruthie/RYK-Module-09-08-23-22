@@ -10,54 +10,53 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input >>> Please see below instead
 const questions = [{
-    {
-        type: 'input',
-        name: 'github',
-        message: 'What is your GitHub username?',
-    },
-    {
-        type: 'input',
-        name: 'repository',
-        message: 'What is your GitHub Repository called?',
-    },
-    {
-        type: 'input',
-        name: 'project',
-        message: 'What is your project called?',
-    },
-    {
-        type: 'input',
-        name: 'description',
-        message: 'Please write a short description of your project.',
-    },
-    {
-        type: 'input',
-        name: 'package',
-        message: 'Which npm package did you install?',
-    },
-    {
-        type: 'input',
-        name: 'license',
-        message: 'What kind of license should your project have?',
-        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
-    },
-    {
-        type: 'input',
-        name: 'command',
-        message: 'What command should be run to install dependencies?'
-    },
-    {
-        type: 'input',
-        name: 'test',
-        message: 'What command should be run to run tests?',
-    },
-    {
-        type: 'input',
-        name: 'url',
-        message: 'Please provide the url deployed for this project.',
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub username?',
+},
+{
+    type: 'input',
+    name: 'repository',
+    message: 'What is your GitHub Repository called?',
+},
+{
+    type: 'input',
+    name: 'project',
+    message: 'What is your project called?',
+},
+{
+    type: 'input',
+    name: 'description',
+    message: 'Please write a short description of your project.',
+},
+{
+    type: 'input',
+    name: 'package',
+    message: 'Which npm package did you install?',
+},
+{
+    type: 'input',
+    name: 'license',
+    message: 'What kind of license should your project have?',
+    choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
+},
+{
+    type: 'input',
+    name: 'command',
+    message: 'What command should be run to install dependencies?'
+},
+{
+    type: 'input',
+    name: 'test',
+    message: 'What command should be run to run tests?',
+},
+{
+    type: 'input',
+    name: 'url',
+    message: 'Please provide the url deployed for this project.',
 
-    },
-}];
+},
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -76,7 +75,9 @@ function writeToFile(fileName, data) {
 function init() {
     // call upon ththe above const questions array
     inquirer.prompt(questions)
-        .then((data) => writeToFile('readme.md', generateMarkdown(data)))
+        .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
+        .then(() => console.log('Successfully wrote to README.md'))
+        .catch((err) => console.error(err));
 }
 
 // Function call to initialize app
