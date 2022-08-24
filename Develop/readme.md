@@ -1,8 +1,8 @@
 
-  # asdf [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  # Create Readme.md Using Node.js [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   # Description
-  asdf
+  Upon installing correct npm package, the user will answer questions in the terminal. Those answers will be used to create the most recent Readme.md in the GitHub Repository.
 
   # Table of Contents 
   * [Description](#description)
@@ -13,16 +13,16 @@
   * [URL](#url)
   
   # Repository
-  https://github.com/asdf/asdf
+  https://github.com/leanonruthie/RYK-Module-09-08-23-22
   
   # Package 
-  asdf
+  Inquirer.
   
   # License
-  GPL 3.0 Badge uses "![License: GPL v3]" + "https://img.shields.io/badge/License-GPLv3-blue.svg" + https://www.gnu.org/licenses/gpl-3.0
+  MIT Badge uses "![License: MIT]" + "https://img.shields.io/badge/License-MIT-yellow.svg" + https://opensource.org/licenses/MIT
 
   # Command
-  asdf
+  "npm run test" but for this project, let's prompt questions in the terminal with "node index.js"
 
   # URL 
-  asdf
+  Normally, GiHub.io url is deployed. In this instance, the current video demo will be edited and placed in the GitHub repository.
