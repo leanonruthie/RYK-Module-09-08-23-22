@@ -76,12 +76,12 @@ function generateMarkdown(data) {
   # Command
   ${data.command}
 
-  #Test
+  # Test
   ${data.test}
 
   # URL 
-  * ${data.url} 
-  * <a href="https://drive.google.com/file/d/1K43yErnotYI6aYd4avFaPcdaZHmL4xsf/view?usp=sharing">Video-Demo</a>
+  ${data.url} 
+  
 `;
 }
 
