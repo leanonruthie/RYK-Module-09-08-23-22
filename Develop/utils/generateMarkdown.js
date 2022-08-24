@@ -61,6 +61,7 @@ function generateMarkdown(data) {
   * [Package](#package)
   * [License](#license)
   * [Command](#command)
+  * [Test](#test)
   * [URL](#url)
   
   # Repository
@@ -73,10 +74,14 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)} + ${renderLicenseLink(data.license)}
 
   # Command
+  ${data.command}
+
+  #Test
   ${data.test}
 
   # URL 
-  ${data.url}
+  * ${data.url} 
+  * <a href="https://drive.google.com/file/d/1K43yErnotYI6aYd4avFaPcdaZHmL4xsf/view?usp=sharing">Video-Demo</a>
 `;
 }
 
