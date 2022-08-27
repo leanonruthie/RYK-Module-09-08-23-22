@@ -14,7 +14,7 @@
   * [URL](#url)
   
   # Repository
-  https://github.com/leanonruthie/RYK-Module-09-08-23-22
+  https://github.com/leanonruthie/Readme-Generator-Using-NodeJS.git
   
   # Package 
   Inquirer
